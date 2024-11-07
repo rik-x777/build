@@ -1,5 +1,5 @@
 rm -rf .repo/local_manifests; \
-repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs; \
+repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault; \
 /opt/crave/resync.sh; \
 rm -rf device/xiaomi/munch; \
 rm -rf device/xiaomi/sm8250-common; \
@@ -8,11 +8,12 @@ rm -rf vendor/xiaomi/munch; \
 rm -rf vendor/xiaomi/sm8250-common; \
 rm -rf hardware/xiaomi; \
 rm -rf vendor/lineage-priv; \
-git clone https://github.com/rik-x777/da.git device/xiaomi/munch; \
-git clone https://github.com/rik-x777/ca.git device/xiaomi/sm8250-common; \
+git clone https://codeberg.org/rik/android_device_xiaomi_munch.git -b infinity device/xiaomi/munch; \
+git clone https://codeberg.org/rik/android_device_xiaomi_sm8250-common.git -b infinity device/xiaomi/sm8250-common; \
+git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
+git clone https://codeberg.org/rik/proprietary_vendor_xiaomi_munch.git -b aosp vendor/xiaomi/munch; \
+git clone https://codeberg.org/rik/proprietary_vendor_xiaomi_sm8250-common.git -b aosp vendor/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi; \
-git clone https://gitea.com/deadlyshroud/vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common; \
-git clone https://github.com/AnkitSavani111/android_kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
-git clone https://gitea.com/deadlyshroud/vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 . build/envsetup.sh; \
-goafterlife munch
+lunch infinity_munch-user; \
+mka bacon
