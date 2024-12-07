@@ -21,7 +21,7 @@ cd dumprx && ./setup.sh; \
 wget https://cdnorg.d.miui.com/OS1.0.5.0.ULMMIXM/miui_MUNCHGlobal_OS1.0.5.0.ULMMIXM_4cab56c7e5_14.0.zip; \
 ./dumper.sh miui_MUNCHGlobal_OS1.0.5.0.ULMMIXM_4cab56c7e5_14.0.zip; \
 cd ..; \
-./device/xiaomi/munch/extract-file.sh dumprx/out; \
+./device/xiaomi/munch/extract-files.sh dumprx/out; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22.0 hardware/xiaomi; \
 git clone https://gitea.com/hdzungx/android_vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera; \
 git clone https://gitea.com/hdzungx/android_vendor_xiaomi_munch-firmware.git vendor/xiaomi/munch-firmware; \
