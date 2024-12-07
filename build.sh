@@ -19,5 +19,9 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22
 git clone https://gitea.com/hdzungx/android_vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera; \
 git clone https://gitea.com/hdzungx/android_vendor_xiaomi_munch-firmware.git vendor/xiaomi/munch-firmware; \
 git clone https://github.com/rik-x777/keys.git vendor/lineage-priv; \
+cd kernel/xiaomi/sm8250; \
+git submodule init && git submodule update; \
+rm -rf KernelSU/userspace/su; \
+cd ../../..; \
 . build/envsetup.sh; \
 brunch munch
