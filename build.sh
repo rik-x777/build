@@ -9,6 +9,7 @@ rm -rf vendor/xiaomi/sm8250-common; \
 rm -rf hardware/xiaomi; \
 rm -rf vendor/lineage-priv; \
 rm -rf hardware/dolby; \
+rm -rf packages/apps/ViPER4AndroidFX; \
 rm -rf vendor/xiaomi/miuicamera; \
 git clone https://github.com/rik-x777/android_device_xiaomi_munch.git device/xiaomi/munch; \
 git clone https://github.com/rik-x777/android_device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common; \
@@ -18,6 +19,7 @@ git clone https://github.com/crdroidandroid/proprietary_vendor_xiaomi_sm8250-mun
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22.0 hardware/xiaomi; \
 git clone https://gitea.com/hdzungx/android_vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera; \
 git clone https://gitea.com/hdzungx/android_vendor_xiaomi_munch-firmware.git vendor/xiaomi/munch-firmware; \
+git clone https://github.com/RisingTechOSS-devices/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX; \
 git clone https://github.com/rik-x777/keys.git vendor/lineage-priv; \
 cd kernel/xiaomi/sm8250; \
 git submodule init && git submodule update; \
