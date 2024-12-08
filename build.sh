@@ -17,7 +17,6 @@ git clone https://github.com/EmanuelCN/kernel_xiaomi_sm8250.git -b munch kernel/
 git clone https://github.com/rik-x777/proprietary_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 git clone https://github.com/rik-x777/proprietary_vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22.0 hardware/xiaomi; \
-git clone https://gitea.com/hdzungx/android_vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera; \
 git clone https://gitea.com/hdzungx/android_vendor_xiaomi_munch-firmware.git vendor/xiaomi/munch-firmware; \
 git clone https://github.com/RisingTechOSS-devices/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX; \
 git clone https://github.com/rik-x777/keys.git vendor/lineage-priv; \
