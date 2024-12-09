@@ -8,9 +8,9 @@ rm -rf vendor/xiaomi/munch; \
 rm -rf vendor/xiaomi/sm8250-common; \
 rm -rf hardware/xiaomi; \
 rm -rf vendor/lineage-priv; \
-rm -rf hardware/dolby; \
 rm -rf packages/apps/ViPER4AndroidFX; \
-rm -rf vendor/xiaomi/miuicamera; \
+rm -rf vendor/gcam; \
+rm -rf vendor/xiaomi/munch-firmware; \
 git clone https://github.com/rik-x777/android_device_xiaomi_munch.git device/xiaomi/munch; \
 git clone https://github.com/rik-x777/android_device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common; \
 git clone https://github.com/EmanuelCN/kernel_xiaomi_sm8250.git -b munch kernel/xiaomi/sm8250; \
