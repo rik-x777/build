@@ -33,4 +33,4 @@ cd ../../..; \
 . build/envsetup.sh; \
 #brunch munch
 lunch pixelstar_munch-user; \
-mka bacon -jXT
+mka bacon
