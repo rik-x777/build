@@ -25,6 +25,7 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22
 git clone https://gitlab.com/rik_munch/vendor_xiaomi_munch-firmware.git vendor/xiaomi/munch-firmware; \
 git clone https://github.com/RisingTechOSS-devices/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX; \
 git clone https://gitlab.com/rik_munch/vendor_gcam.git vendor/gcam; \
+git clone https://gitlab.com/rik_munch/vendor_firefox.git vendor/firefox; \
 #git clone https://github.com/rik-x777/keys.git vendor/lineage-priv; \
 #git clone https://github.com/rik-x777/keys.git -b ps vendor/pixelstar/signing/keys; \
 cd kernel/xiaomi/sm8250; \
